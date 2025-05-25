@@ -59,4 +59,8 @@ IF(Qt6Widgets_FOUND)
         DESTINATION include/osgQOpenGL
         FILES_MATCHING PATTERN "*.h"
     )
+
+    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/Export.h"
+        DESTINATION include/osgQOpenGL
+    )
 ENDIF()

@@ -407,7 +407,7 @@ ENDIF(WIN32 AND NOT ANDROID)
 
 
 # OSG Examples
-OPTION(BUILD_OSG_EXAMPLES "Enable to build OSG Examples" ON)
+OPTION(BUILD_OSG_EXAMPLES "Enable to build OSG Examples" OFF)
 
 #
 # If you want to prevent CMake from picking up on any of the following optional 3rd Party dependencies in CMake 2.8 onwards
