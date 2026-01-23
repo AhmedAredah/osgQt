@@ -1,0 +1,11 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# Find required dependencies
+find_dependency(Qt6 COMPONENTS Widgets OpenGL OpenGLWidgets)
+find_dependency(OpenSceneGraph 3.6.0 COMPONENTS osgDB osgGA osgUtil osgText osgViewer osgWidget)
+find_dependency(OpenGL)
+
+# Include the targets file
+include("${CMAKE_CURRENT_LIST_DIR}/osgQtTargets.cmake")
